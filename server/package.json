@@ -1,9 +1,11 @@
 {
   "name": "your-server-name",
   "version": "1.0.0",
-  "main": "app.js",
+  "description": "A simple bingo game server",
+  "main": "server/app.js", // Update this line
   "scripts": {
-    "start": "node app.js"
+    "start": "node server/app.js", // Update this line
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -13,5 +15,21 @@
   },
   "devDependencies": {
     "eslint": "^9.8.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ebmcreations/bingo-game-v2.git"
+  },
+  "keywords": [
+    "bingo",
+    "game",
+    "nodejs",
+    "express"
+  ],
+  "author": "EBM Creations",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebmcreations/bingo-game-v2/issues"
+  },
+  "homepage": "https://github.com/ebmcreations/bingo-game-v2#readme"
 }
