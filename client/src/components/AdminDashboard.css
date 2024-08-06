@@ -1,0 +1,270 @@
+/* AdminDashboard.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.control-panel {
+  display: flex;
+  flex-direction: column; /* Keep it column for mobile view */
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+@media (min-width: 768px) {
+  .control-panel {
+    flex-direction: row; /* Change to row for larger screens */
+    justify-content: space-between; /* Space out items */
+    align-items: flex-start; /* Align items at the top */
+  }
+}
+
+.draw-button,
+.next-game-button,
+.reset-game-button,
+.main-screen-button {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+  width: 90%; /* Full width on mobile */
+}
+
+.draw-button,
+.next-game-button,
+.reset-game-button {
+  background-color: #f8629a;
+}
+
+.draw-button:hover,
+.next-game-button:hover,
+.reset-game-button:hover {
+  background-color: #d04a7b;
+}
+
+.draw-count {
+  margin: 10px 0; /* Space below the draw count */
+}
+
+.game-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0; /* Space above and below the game type */
+  width: 100%; /* Full width to center it */
+}
+
+.game-type label {
+  margin-bottom: 5px;
+}
+
+.game-type input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 90%; /* Full width on mobile */
+  max-width: 300px; /* Max width for the input */
+}
+
+.next-game-container {
+  display: flex;
+  flex-direction: column; /* Change to column for next game and reset buttons */
+  align-items: flex-end; /* Align to the right */
+  width: 100%; /* Full width */
+  margin-top: 10px; /* Space above the next game container */
+}
+
+.game-number {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  align-self: flex-end; /* Align to the right */
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info-box.small {
+  width: 48%;
+}
+
+.info-box.full-width {
+  width: 100%;
+}
+
+.info-box h2 {
+  font-size: 16px; /* Larger font size for headers */
+  margin: 0;
+  margin-bottom: 5px; /* Space between header and data */
+}
+
+.info-box .data {
+  font-size: 14px; /* Smaller font size for data */
+}
+
+.info-box .current-number {
+  font-size: 48px; /* Larger font size for current draw data */
+}
+
+.info-box .last-five-numbers {
+  font-size: 28px; /* Larger font size for last 5 numbers data */
+}
+
+.info-box .numbers-list {
+  font-size: 16px; /* Font size for drawn numbers data */
+  text-align: left;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.main-screen-button {
+  background-color: #f8629a; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 15px; /* Padding */
+  cursor: pointer; /* Pointer cursor */
+  position: absolute; /* Positioning */
+  top: 10px; /* Distance from the top */
+  left: 10px; /* Distance from the left */
+  z-index: 1000; /* Ensure button appears above other elements */
+  width: auto; /* Set width to auto to maintain normal button size */
+  max-width: 150px; /* Optional: Set a max-width for larger screens */
+}
+
+.main-screen-button:hover {
+  background-color: #d04a7b; /* Darker shade on hover */
+}
+
+.draw-number-container {
+  display: flex;
+  flex-direction: column; /* Change to column for layout */
+  align-items: center; /* Center items horizontally */
+  width: 100%;
+  margin-bottom: 20px; /* Add spacing below the draw number container */
+}
+
+/* Auto Draw Checkbox Styles */
+.auto-draw-timer-container {
+  display: flex; /* Horizontal layout */
+  justify-content: flex-start; /* Align to the left */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 10px; /* Space below the container */
+  width: 100%; /* Full width to align with other elements */
+}
+
+.auto-draw-container {
+  display: flex; /* Use flexbox for horizontal layout */
+  align-items: center; /* Center items vertically */
+  margin-right: 20px; /* Space to the right of the checkbox */
+}
+
+.auto-draw-container input[type='checkbox'] {
+  margin-right: 10px; /* Space between checkbox and label */
+}
+
+.timer-display {
+  font-size: 16px; /* Font size for the timer */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Chat Box Styles */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; /* Chat area background */
+  border: 2px solid black; /* Border around chat area */
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%; /* Full width */
+  max-width: 800px; /* Max width to match other elements */
+  height: 300px; /* Fixed height for scrolling */
+  margin-top: 20px; /* Space above the chat area */
+  position: relative; /* Positioning for chat input */
+}
+
+.chat-messages {
+  flex: 1; /* Allow this section to grow */
+  overflow-y: auto; /* Enable scrolling */
+  margin-bottom: 10px; /* Space between messages and input */
+}
+
+.chat-input-container {
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+.chat-input-container input {
+  flex: 1; /* Allow the input to take available space */
+  margin-right: 10px; /* Space between input and button */
+  padding: 10px; /* Padding for input */
+}
+
+.chat-input-container button {
+  background-color: #f8629a; /* Send button color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 20px; /* Padding */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.chat-input-container button:hover {
+  background-color: #d04a7b; /* Darker shade on hover */
+}
+
+.chat-message {
+  margin-bottom: 5px; /* Space between messages */
+  color: #f8629a; /* Chat message text color */
+}

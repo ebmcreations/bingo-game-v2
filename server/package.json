@@ -1,0 +1,17 @@
+{
+  "name": "your-server-name",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^5.10.0",
+    "socket.io": "^3.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.8.0"
+  }
+}
