@@ -2,9 +2,9 @@
   "name": "your-server-name",
   "version": "1.0.0",
   "description": "A simple bingo game server",
-  "main": "server/app.js", // Update this line
+  "main": "server/app.js",
   "scripts": {
-    "start": "node server/app.js", // Update this line
+    "start": "node server/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
