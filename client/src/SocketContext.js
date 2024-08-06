@@ -2,7 +2,7 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 
-const ENDPOINT = 'https://sockethandler-a6loowyw7q-uc.a.run.app'; // Your Firebase function URL
+const ENDPOINT = 'https://your-digital-ocean-endpoint.com'; // Replace with your DigitalOcean socket server URL
 const SocketContext = createContext();
 
 const SocketProvider = ({ children, playerName }) => {
