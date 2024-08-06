@@ -1,16 +1,15 @@
 {
-  "name": "your-server-name",
+  "name": "bingo-game-server",
   "version": "1.0.0",
   "description": "A simple bingo game server",
-  "main": "server/app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node server/app.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "mongoose": "^5.10.0",
     "socket.io": "^3.1.2"
   },
   "devDependencies": {
